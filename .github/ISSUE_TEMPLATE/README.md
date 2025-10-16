@@ -84,7 +84,7 @@ These templates ensure that:
 3. Choose the template that best fits your need
 4. Fill out all required fields
 5. Submit the issue
-6. Assign it to @copilot when ready for implementation
+6. The issue can then be assigned to the appropriate team member or automation
 
 ## Tips for Writing Good Issues
 
