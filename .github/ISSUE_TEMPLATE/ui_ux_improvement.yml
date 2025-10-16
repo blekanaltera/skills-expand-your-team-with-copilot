@@ -1,0 +1,110 @@
+name: UI/UX Improvement
+description: Suggest improvements to the user interface or user experience
+title: "[UI/UX]: "
+labels: ["ui", "ux", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to suggest improvements to how the application looks and feels.
+
+  - type: textarea
+    id: current-experience
+    attributes:
+      label: Current Experience
+      description: Describe the current user interface or user experience
+      placeholder: |
+        Example: The current card view is useful, but it's difficult to see time overlaps between activities.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed Improvement
+      description: What UI/UX changes would you like to see?
+      placeholder: |
+        Example: Add a calendar view that shows activities laid out by day and time, making it easier to spot conflicts.
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-benefit
+    attributes:
+      label: User Benefit
+      description: How will this improvement help users (students, teachers, administrators)?
+      placeholder: |
+        Example: Teachers can easily identify scheduling conflicts and students can better plan their weekly schedules.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List specific requirements for the improvement
+      placeholder: |
+        - [ ] Add view toggle button in the top bar
+        - [ ] Calendar shows Sunday through Saturday
+        - [ ] Activities are positioned by their actual time slots
+        - [ ] Overlapping activities are shown side-by-side
+        - [ ] Hovering shows full activity details
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ui-component
+    attributes:
+      label: Which UI component is affected?
+      description: Select the component this improvement relates to
+      options:
+        - Header/Navigation
+        - Activity Cards
+        - Filters/Sidebar
+        - Calendar View
+        - Forms (Login, Sign-up)
+        - Buttons/Controls
+        - Colors/Theme
+        - Layout/Spacing
+        - Typography
+        - Icons/Images
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device Type
+      description: Which devices should this improvement support?
+      multiple: true
+      options:
+        - Desktop/Laptop
+        - Tablet
+        - Mobile Phone
+        - All Devices
+    validations:
+      required: true
+
+  - type: textarea
+    id: design-references
+    attributes:
+      label: Design References (Optional)
+      description: Share any mockups, screenshots, or links to similar designs
+      placeholder: |
+        - Link to example: https://example.com
+        - Screenshot: [attach image]
+        - Similar feature in another app
+    validations:
+      required: false
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and Limitations
+      description: Are there any technical limitations or design constraints to consider?
+      placeholder: |
+        Example: Must maintain school branding colors (white and lime green)
+        Example: Should work without JavaScript for accessibility
+    validations:
+      required: false
