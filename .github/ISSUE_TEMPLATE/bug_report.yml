@@ -1,0 +1,79 @@
+name: Bug Report
+description: Report a bug or issue with the High School Activity Management System
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us understand and fix the issue.
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Problem Description
+      description: Clearly describe what is not working as expected
+      placeholder: |
+        Example: The website is blue, but our school colors are white and lime green. The mascot is also missing from the page.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions to reproduce the issue
+      placeholder: |
+        1. Go to the homepage
+        2. Look at the header
+        3. Notice the incorrect colors
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: |
+        Example: The website should use our school colors (white and lime green) and display our mascot from https://octodex.github.com/
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What is actually happening?
+      placeholder: "Example: The website is blue and has no mascot"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area is affected?
+      description: Select the area of the application where the bug occurs
+      options:
+        - Homepage/Layout
+        - Activity List/Cards
+        - Activity Filtering
+        - Sign-up/Registration
+        - Authentication/Login
+        - Styling/Colors
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or information about the problem
+      placeholder: |
+        - Browser version
+        - Screenshots
+        - Error messages
+        - Any other relevant details
+    validations:
+      required: false

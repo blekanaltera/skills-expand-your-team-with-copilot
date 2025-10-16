@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question
+    url: https://github.com/blekanaltera/skills-expand-your-team-with-copilot/discussions
+    about: Ask questions and discuss with the community
+  - name: View Documentation
+    url: https://github.com/blekanaltera/skills-expand-your-team-with-copilot/blob/main/README.md
+    about: Read the project documentation

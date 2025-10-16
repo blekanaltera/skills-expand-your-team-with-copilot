@@ -1,0 +1,124 @@
+name: Activity Modification
+description: Add, update, or remove an extracurricular activity
+title: "[Activity]: "
+labels: ["activity", "data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request changes to extracurricular activities in the system.
+
+  - type: dropdown
+    id: modification-type
+    attributes:
+      label: Type of Modification
+      description: What type of change are you requesting?
+      options:
+        - Add new activity
+        - Update existing activity
+        - Remove activity
+    validations:
+      required: true
+
+  - type: input
+    id: activity-name
+    attributes:
+      label: Activity Name
+      description: The name of the activity to add, update, or remove
+      placeholder: "Example: Chess Club, Robotics Workshop, Drama Club"
+    validations:
+      required: true
+
+  - type: textarea
+    id: activity-description
+    attributes:
+      label: Activity Description (for new/updated activities)
+      description: Provide a brief description of what the activity is about
+      placeholder: "Example: Learn strategies and compete in chess tournaments"
+    validations:
+      required: false
+
+  - type: input
+    id: schedule
+    attributes:
+      label: Schedule
+      description: When does this activity meet?
+      placeholder: "Example: Mondays and Fridays, 3:15 PM - 4:45 PM"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: days-of-week
+    attributes:
+      label: Days of the Week
+      description: Select all days this activity meets
+      options:
+        - label: Monday
+        - label: Tuesday
+        - label: Wednesday
+        - label: Thursday
+        - label: Friday
+        - label: Saturday
+        - label: Sunday
+
+  - type: input
+    id: start-time
+    attributes:
+      label: Start Time
+      description: What time does the activity start? (24-hour format)
+      placeholder: "Example: 15:15 or 07:00"
+    validations:
+      required: false
+
+  - type: input
+    id: end-time
+    attributes:
+      label: End Time
+      description: What time does the activity end? (24-hour format)
+      placeholder: "Example: 16:45 or 08:00"
+    validations:
+      required: false
+
+  - type: input
+    id: max-participants
+    attributes:
+      label: Maximum Participants
+      description: What is the maximum number of students who can join?
+      placeholder: "Example: 15"
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-participants
+    attributes:
+      label: Current Participants (Optional)
+      description: List any students already registered (one email per line)
+      placeholder: |
+        student1@mergington.edu
+        student2@mergington.edu
+    validations:
+      required: false
+
+  - type: textarea
+    id: reason-for-change
+    attributes:
+      label: Reason for Change
+      description: Why is this modification needed?
+      placeholder: |
+        Example: We need to add a new robotics activity due to high student demand.
+        Example: Math Club needs to change its schedule to avoid conflicts with other activities.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Any other details that might be helpful
+      placeholder: |
+        - Teacher/sponsor information
+        - Room or location requirements
+        - Special equipment needed
+        - Dependencies on other activities
+    validations:
+      required: false

@@ -1,0 +1,98 @@
+name: Feature Request
+description: Request a new feature or enhancement for the Activity Management System
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide detailed information to help us understand your request.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Clearly describe the feature you'd like to see
+      placeholder: |
+        Example: Add a dark mode toggle that allows switching between dark and light themes
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? Why is it needed?
+      placeholder: |
+        Example: Students are fascinated with dark interfaces and keep asking for it. A dark mode would improve usability in low-light environments.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What should the completed feature be able to do? List specific requirements.
+      placeholder: |
+        - [ ] Toggle button in the top right corner
+        - [ ] Switches between dark and light mode
+        - [ ] User preference is saved
+        - [ ] All pages support both modes
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested Solution (Optional)
+      description: If you have ideas on how to implement this feature, share them here
+      placeholder: |
+        Example:
+        - Add a toggle button in the header
+        - Use CSS variables for colors
+        - Store preference in localStorage
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Which area should this feature affect?
+      description: Select the area where this feature should be implemented
+      options:
+        - User Interface (UI)
+        - Activity Management
+        - Filtering/Searching
+        - Calendar/Schedule View
+        - Authentication/Users
+        - Data/Database
+        - API/Backend
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve user experience
+        - High - Important for school operations
+        - Critical - Blocking current operations
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information, mockups, examples, or references
+      placeholder: |
+        - Links to similar features
+        - Screenshots or mockups
+        - Related issues
+        - User feedback
+    validations:
+      required: false
