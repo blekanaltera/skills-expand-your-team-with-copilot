@@ -41,10 +41,10 @@ def get_activities(
     if end_time:
         query["schedule_details.end_time"] = {"$lte": end_time}
     
-    if difficulty and difficulty != "All":
+    if difficulty and difficulty != "Unspecified":
         query["difficulty"] = difficulty
-    elif difficulty == "All":
-        # "All" means only activities with NO difficulty specified
+    elif difficulty == "Unspecified":
+        # "Unspecified" means only activities with NO difficulty specified
         query["difficulty"] = {"$exists": False}
     
     # Query the database
